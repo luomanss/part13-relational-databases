@@ -1,4 +1,4 @@
-CREATE TABLE blog (
+CREATE TABLE blogs (
     id SERIAL PRIMARY KEY,
     author VARCHAR(100),
     url VARCHAR(100) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE blog (
     likes INT DEFAULT 0
 );
 
-INSERT INTO blog (author, url, title) 
+INSERT INTO blogs (author, url, title) 
 VALUES 
 ('Dan Abramov', 'https://example.com', 'On let vs const'),
 ('Laurenz Albe', 'https://example.com', 'Gaps in sequences in PostgreSQL');
